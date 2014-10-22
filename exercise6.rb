@@ -4,7 +4,7 @@ def g_list(list)
 	list.map { |item| puts "* #{item}"}
 end
 
-puts "==== Grocery List ===="
+# puts "==== Grocery List ====" 
 g_list(grocery_list)
 puts ""
 puts "The grocery list contains #{grocery_list.length} items"
@@ -16,11 +16,11 @@ else
 end
 
 puts "The second Item on your list is #{grocery_list[1]}"
-puts " === Alphabetical List ==="
+#puts " === Alphabetical List ==="
 sorted_list = g_list(grocery_list.sort)
 puts sorted_list
 
 grocery_list.delete("salmon")
-puts "=== Goodbye, Salmon! ==="
+#puts "=== Goodbye, Salmon! ==="
 g_list(grocery_list)
 
